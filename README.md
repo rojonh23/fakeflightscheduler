@@ -2,6 +2,10 @@
 
 SpringBoot Application that demonstrates REST API Development using Spring MVC, Spring Data JPA, Spring Security, JWT using Java 8 features
 
+## Integration Diagram
+![Alt text](./flightAPIdiagram.svg)
+<img src="./flightAPIdiagram.svg">
+
 ## API Endpoints
 
 This REST API has 2 end-points that create and provide flight schedules
