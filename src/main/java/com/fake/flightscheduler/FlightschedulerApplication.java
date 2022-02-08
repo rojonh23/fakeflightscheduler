@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = { "com.fake.flightscheduler.repo", "com.fake.flightscheduler.service", "com.fake.flightscheduler.controller" })
+@ComponentScan(basePackages = { "com.fake.flightscheduler.security", "com.fake.flightscheduler.repo", "com.fake.flightscheduler.service", "com.fake.flightscheduler.controller" })
 public class FlightschedulerApplication {
 
 	@Bean
