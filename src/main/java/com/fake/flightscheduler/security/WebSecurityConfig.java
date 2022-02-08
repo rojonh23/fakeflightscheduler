@@ -30,14 +30,14 @@ import lombok.RequiredArgsConstructor;
     prePostEnabled = true)
 
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-  
+
   @Value("${spring.h2.console.path}")
   private String h2ConsolePath;
-  
+
   private final UserDetailsServiceImpl userDetailsService;
 
   private final AuthEntryPointJwt unauthorizedHandler;
-  
+
   private final JwtUtil jwtUtil;
 
   @Bean
@@ -69,8 +69,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
       .authorizeRequests().antMatchers("/auth/**").permitAll()
       .antMatchers("/flights/**").permitAll()
       .antMatchers(h2ConsolePath + "/**").permitAll()
+      .antMatchers("/swagger-ui/**").permitAll()
+      .antMatchers("/swagger-resources/**").permitAll()
+      .antMatchers("/v3/**").permitAll()
+
       .anyRequest().authenticated();
-    
+
     // fix H2 database console: Refused to display ' in a frame because it set 'X-Frame-Options' to 'deny'
     http.headers().frameOptions().sameOrigin();
 
