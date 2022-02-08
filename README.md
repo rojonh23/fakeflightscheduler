@@ -106,7 +106,6 @@ Steps on how to test POST /flights
 	    "arrivalTime":"2020-06-11T10:25:23Z",
 	    "airline":"QF"
 	}
-
 ## Running the Test Cases
 
 Unit test available as of now for the Flight API
