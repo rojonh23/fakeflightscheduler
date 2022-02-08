@@ -4,7 +4,6 @@ SpringBoot Application that demonstrates REST API Development using Spring MVC, 
 
 ## Integration Diagram
 ![Alt text](./flightAPIdiagram.svg)
-<img src="./flightAPIdiagram.svg">
 
 ## API Endpoints
 
